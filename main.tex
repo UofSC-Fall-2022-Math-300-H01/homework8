@@ -27,50 +27,62 @@
 
 \begin{document}
 
-\title{Homework 6}
+\title{Homework}
 
 \maketitle
 
 \begin{enumerate}
-	\item The division algorithm says that given two natural numbers $n$ and $m$ we can write 
-		\begin{displaymath}
-			n = qm + r
-		\end{displaymath}
-		for two integers $q,r$ with $0 \leq r < m$. 
-
-		Write this as a formula in predicate logic. 
-	\item One way to express the infinitude of prime numbers is: There exists a prime number and 
-		for any prime number $p$ there exists another prime $q$ with $q \gneq p$. 
-
-		Write this as a formula in predicate logic. 
-	\item Fermat's Last Theorem says: for any $n > 2$ there are no solutions to 
-		\begin{displaymath}
-			a^n + b^n = c^n 
-		\end{displaymath}
-		with $a,b,c \in \mathbb{N}$ with $a > 0, b > 0,$ and $c>0$. 
+	\item Write out all elements of the set $\mathcal P(\{0,1,2\})$. 
 		
-		Write this as a formula in predicate logic. 
-	% \begin{enumerate}
-	% 	\item For any natural number $n$, there is a natural number $m$ such that $m > 5n$. 
-	% 	\item If $n$ is divisible by $m^2$, then $n$ is divisible by $m$. 
-	% 	\item For every prime number $p$, there is a composite (non-prime) number bigger than 
-	% 		$p$
-	% 	\item There exists a unique solution to $\sqrt{n} = 0$. 
-	% \end{enumerate}
-	\item If the following are provable, give a proof. If not, give a model that invalidates it. 
-	\begin{enumerate}
-		\item $\displaystyle{\forall x~ (A(x) \to B(x)) \to \forall x~ (\neg A(x) \land B(x))}$
-		\item $\displaystyle{\exists x~y~ B(x,y) \to \exists z~ B(z,z)}$
-		% \item $\displaystyle{\forall x~ \neg (A(x) \lor B(x) \to C(x)) \to \exists x~ \neg C(x) }$
-		\item $\displaystyle{\forall x~ A(x) \land \exists y~ (A(y) \to B) \to B}$
-	\end{enumerate}
-	\item Consider the statement:
-	\begin{center}
-		For any natural number $n$, either $n^2$ or $n^2 - 1$ is divisible by $3$. 
-	\end{center}
-	State this as formula. How far can you get to a formal proof of this statement via 
-	natural deduction and using the division algorithm? What other facts would help you 
-	get to a proof?
+	\item Prove the following identity: 
+	\begin{displaymath}
+		(X \cup Y) \cap Z = (X \cap Z) \cup (Y \cap Z)
+	\end{displaymath}
+
+	\item Prove the following identity:
+	\begin{displaymath}
+		(X \cup Y)^c = X^c \cap Y^c
+	\end{displaymath}
+
+	\item A set is called \textit{finite} if it only has a finite number of elements. 
+		For a finite set $X$, we denote by $|X|$ the number of the elements 
+		in $X$. It is called the \textit{order} of $X$. Establish the following 
+		theorem: if $X$ is a finite set and $Y \subseteq X$ then 
+		\begin{displaymath}
+			|Y| \leq |X| 
+		\end{displaymath}
+		Note that you should show that $Y$ is also finite so be able to 
+		use $|Y|$. 
+
+		THe converse of this result says that if $|Y| > |X|$ then $Y \nsubseteq X$. 
+	% 		
+	%
+	% \item Given a family of sets $\{ X_i \mid i \in I \}$, we define the product 
+	% 	\begin{displaymath}
+	% 		\prod_{i \in I} X_i := \{ (x_i)_{i \in I} \mid x_i \in X_i \} 
+	% 	\end{displaymath}
+	% 	For example, if $X_i = \mathbb{N}$ and $I = \mathbb{N}$, elements of 
+	% 	$\prod_{i \in \mathbb{N}} \mathbb{N}$ are infinite sequences 
+	% 	\begin{displaymath}
+	% 		n_0, n_1, n_2, n_3, n_4, n_5, \ldots, n_j, \ldots
+	% 	\end{displaymath}
+	% 	with $n_j \in \mathbb{N}$.
+	%
+	% 	Suppose that for each $i \in I$, we know that $X_i \subseteq Y_i$. 
+	% 	Prove that 
+	% 	\begin{displaymath}
+	% 		\prod_{i \in I} X_i \subseteq \prod_{i \in I} Y_i
+	% 	\end{displaymath}
+
+	\item Decide (with proof) if the following are true always, sometimes, or never. 
+		\begin{enumerate}
+			\item Let $X$ and $Y$ be sets such that $X \setminus Y 
+				= \varnothing$. Then $X = Y$.
+			\item Let $X$, $Y$, and $Z$ be sets such that $X \setminus Y = Z$ 
+				and $Y \subseteq Z$. Then $X = Y \cup Z$.
+			\item Let $X$ be a set. Then $\{\varnothing\} \in \mathcal P(X)$. 
+		\end{enumerate}
+		
 \end{enumerate}
 
 \end{document}
